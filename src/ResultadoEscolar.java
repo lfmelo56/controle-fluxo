@@ -1,15 +1,10 @@
 public class ResultadoEscolar {
     public static void main(String[] args) {
         
-        int nota = 7;
+        int nota = 5;
 
-        if (nota >= 6)
-         System.out.println("Parabéns! Você foi aprovado.");
+        String resultado = nota >= 7 ? "Parabéns! Você foi aprovado." : nota >=5 && nota <7 ? "Direcionado à recuperação." : "Infelizmente, você foi reprovado.";
+        System.out.println(resultado);
 
-        else if (nota >= 5 && nota < 7)
-         System.out.println("Direcionado à recuperação.");
-
-        else 
-         System.out.println("Infelizmente, você foi reprovado.");
     }
 }
